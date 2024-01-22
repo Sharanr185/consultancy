@@ -1,77 +1,72 @@
-# React Project
 
-Yael Greenberg
-Rivky Fisher
-Libby Mark
+# Stationery Shop Website
+
+This README file provides a brief overview of the steps involved in creating a website for selling stationery items. The website is based on an existing stationery store and is built using React and Bootstrap.
+
+## Getting Started
+
+Follow these steps to set up the project locally:
+
+1. **Clone the Repository:**
+   ```bash
+   git clone https://github.com/MyNameIsYg/stationery-shop-website.git
+   cd stationery-shop-website
+   ```
+
+2. **Install Dependencies:**
+   ```bash
+   npm install
+   ```
 
 
-# Getting Started with Create React App
+## Project Structure
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+The project is organized as follows:
 
-## Available Scripts
+- **`public/`:** Contains public assets like images, icons, and the `index.html` file.
+- **`src/`:** Contains the source code for the React application.
+  - **`Image/`:** The images of website
+  - **`comp/`:** React components used in the application.
+  - **`css/`:** CSS files for styling.
+  - **`redux/`:** Contains Redux-related files.
+    - **`ElectronicImage/`:** Images of Electronic
+    - **`FilingImage/`:** Images of Filing
+    - **`PaperImage/`:** Images of Paper
+    - **`StationeryImage/`:** Images of Stationery
+    - **`action/`:** Redux action creators.
+    - **`reducer/`:** Redux reducers.
+    - **`store.js`:** Redux store configuration.
 
-In the project directory, you can run:
+## Integrating Bootstrap
 
-### `npm start`
+Bootstrap is used for styling the website. It is loaded in the `public/index.html` file:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+```html
+<!-- Add this in the <head> section -->
+<link
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous" />
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+/>
+```
 
-### `npm test`
+## Running the Application
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+To start the development server and view the website locally, run:
 
-### `npm run build`
+```bash
+npm start
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+This will launch the application at `http://localhost:3000` by default.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Live Demo
 
-### `npm run eject`
+The project is deployed and can be accessed live at [https://store-xp5j.onrender.com](https://store-xp5j.onrender.com)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Feel free to explore the website and test its features. If you encounter any issues or have feedback, please submit an [issue](https://github.com/MyNameIsYg/stationery-shop-website/issues).
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
