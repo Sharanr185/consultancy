@@ -1,19 +1,9 @@
 import Nav from 'react-bootstrap/Nav';
-import { Route } from 'react-router-dom';
-import { Routes } from 'react-router-dom';
-import { BrowserRouter } from 'react-router-dom';
-import About from './About';
-import Electronic from './Electronic';
-import Home from './Home';
 import logo from '../Image/logo.webp'
 import cart from '../Image/cart.png'
 import home from '../Image/home.png'
 import { Badge } from 'react-bootstrap';
-import Paper from './Paper';
-import Filing from './Filing';
-import Stationery from './Stationery';
 import { useSelector } from 'react-redux';
-import CartDetails from './CartDetails';
 import { useNavigate } from 'react-router-dom';
 // import NoProducts from './NoProducts';
 

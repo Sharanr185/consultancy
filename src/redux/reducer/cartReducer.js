@@ -22,7 +22,7 @@ const cartReducer = (state = cart, action) => {
 
     }
     if (action.type === "DELETE_FROM_CART")
-        state = state.filter(p => p.code != action.payload.code)
+        state = state.filter(p => p.code !== action.payload.code)
     console.log(cart)
     return state
 };

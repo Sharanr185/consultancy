@@ -54,7 +54,8 @@ export default function CartDetails() {
                                  <Button style={{ backgroundColor: "#F5D43E", borderColor: "#F5D43E", color: "black" }} onClick={(e) => {
                                     e.preventDefault();
                                     dispatch(decreaseQty(item.qty + 1, item.code));
-                                 }}>+</Button></td>
+                                 }}>+</Button>
+                              </td>
 
                               <td style={{ textAlign: "center" }}><img src={item.product_image} style={{ width: 75, height: 75 }} /></td>
                               <td style={{ textAlign: "center" }}>{item.name}</td>
@@ -66,7 +67,9 @@ export default function CartDetails() {
                   <Button
                      style={{ backgroundColor: '#F5D43E', border: '#F5D43E', width: 200, height: 50 }}
                      onClick={() => navigate(-1)}>להמשך הקניה</Button><br /><br />
-                  <PayPal />
+                  <center>
+                     <PayPal />
+                  </center>
                </>
                : <h1 dir='rtl' style={{ color: "gray" }}>עגלת הקניות שלכם ריקה :(</h1>
             }
