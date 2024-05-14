@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { useNavigate } from 'react-router-dom';
-import api from '../../../server/api/url';
+//import api from '../../../server/api/url';
 import img1 from '../Image/home.png';
+import axios from 'axios';
 //import bcrypt from "bcryptjs";
 import { Eye } from 'react-bootstrap-icons';
 
@@ -40,7 +41,7 @@ const Signup = () => {
       return;
     }*/
     console.log('data',request);  
-    api.post("http://localhost:3001/register", request)
+    axios.post("http://localhost:3001/register", request)
       .then(res =>  {
         console.log(res);
         navigate('/');

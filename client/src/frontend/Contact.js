@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
-import api from '../../../server/api/url';
+//import api from '../../../server/api/url';
 const Contact = () => {
     const [name, setName]= useState('');
     const [email, setEmail] = useState('');
@@ -16,7 +16,7 @@ const Contact = () => {
           feedback: feedback
         }
         console.log('data',request);  
-        api.post("http://localhost:3001/contact", request)
+        axios.post("http://localhost:3001/contact", request)
       .then(res =>  {
         console.log(res);
         navigate('/');
