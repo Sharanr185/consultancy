@@ -22,7 +22,7 @@ import s21 from '../StationeryImage/s21.webp'
 
 const products = [{
     id: 0,
-    name: "עט ג'ל ",
+    name: "Gel Pen",
     description: "0.4 PILOT",
     product_image: s1,
     price: 8.90,
@@ -31,7 +31,7 @@ const products = [{
 },
 {
     id: 1,
-    name: "עיפרון שפיצים",
+    name: "Mechanical Pencil",
     description: "0.5 PILOT",
     product_image: s2,
     price: 6.90,
@@ -40,8 +40,8 @@ const products = [{
 },
 {
     id: 2,
-    name: "עט לורד",
-    description: " מארז 12 יחידות",
+    name: "Lord Pens",
+    description: "12-pack",
     product_image: s3,
     price: 37.90,
     qty: 100,
@@ -49,8 +49,8 @@ const products = [{
 },
 {
     id: 3,
-    name: "בקבוק טיפקס",
-    description: "מארז 3 יחידות",
+    name: "Tip-Ex Bottle",
+    description: "3-pack",
     product_image: s4,
     price: 10.50,
     qty: 100,
@@ -58,7 +58,7 @@ const products = [{
 },
 {
     id: 4,
-    name: "עיפרון מכני",
+    name: "Mechanical Pencil",
     description: "0.7 MONAMI",
     product_image: s5,
     price: 6.90,
@@ -67,8 +67,8 @@ const products = [{
 },
 {
     id: 5,
-    name: "לורדים דקים",
-    description: "10 יחידות במארז",
+    name: "Thin Lords",
+    description: "10-pack",
     product_image: s6,
     price: 15.90,
     qty: 100,
@@ -76,8 +76,8 @@ const products = [{
 },
 {
     id: 6,
-    name: "מחדד",
-    description: "מתכת STAEDTLER",
+    name: "Sharpener",
+    description: "STAEDTLER Metal",
     product_image: s7,
     price: 4.90,
     qty: 100,
@@ -85,8 +85,8 @@ const products = [{
 },
 {
     id: 7,
-    name: "סט סרגלים",
-    description: "שקוף ARDA",
+    name: "Set of Rulers",
+    description: "Transparent ARDA",
     product_image: s8,
     price: 9.90,
     qty: 100,
@@ -94,8 +94,8 @@ const products = [{
 },
 {
     id: 8,
-    name: "סרגל",
-    description: "מתכת",
+    name: "Ruler",
+    description: "Metal",
     product_image: s9,
     price: 3.90,
     qty: 100,
@@ -103,8 +103,8 @@ const products = [{
 },
 {
     id: 9,
-    name: "לורד הדגשה",
-    description: "זוהר",
+    name: "Highlighter Lord",
+    description: "Glowing",
     product_image: s10,
     price: 4.00,
     qty: 100,
@@ -112,8 +112,8 @@ const products = [{
 },
 {
     id: 10,
-    name: "עפרונות",
-    description: "מארז 12 עפרונות",
+    name: "Pencils",
+    description: "12-pack",
     product_image: s11,
     price: 5.90,
     qty: 100,
@@ -121,7 +121,7 @@ const products = [{
 },
 {
     id: 11,
-    name: "לורד הדגשה",
+    name: "Highlighter Lord",
     description: "STABILO",
     product_image: s12,
     price: 9.90,
@@ -130,7 +130,7 @@ const products = [{
 },
 {
     id: 12,
-    name: "מחדד מעוצב",
+    name: "Designed Sharpener",
     description: "MAPED",
     product_image: s13,
     price: 8.90,
@@ -139,7 +139,7 @@ const products = [{
 },
 {
     id: 13,
-    name: "בקבוק טיפקס",
+    name: "Tip-Ex Bottle",
     description: "TIPP-EX",
     product_image: s14,
     price: 6.90,
@@ -148,8 +148,8 @@ const products = [{
 },
 {
     id: 14,
-    name: "מארז  עטי פיילוט",
-    description: "10 עטים",
+    name: "Pilot Pen Set",
+    description: "10 pens",
     product_image: s15,
     price: 79.90,
     qty: 100,
@@ -157,8 +157,8 @@ const products = [{
 },
 {
     id: 15,
-    name: "שבלונה",
-    description: "במגוון צורות ARDA",
+    name: "Stencil",
+    description: "Various shapes ARDA",
     product_image: s16,
     price: 14.90,
     qty: 100,
@@ -166,8 +166,8 @@ const products = [{
 },
 {
     id: 16,
-    name: "מחוגה",
-    description: "בטיחותית MAPED",
+    name: "Compass",
+    description: "Safety MAPED",
     product_image: s17,
     price: 10.50,
     qty: 100,
@@ -175,7 +175,7 @@ const products = [{
 },
 {
     id: 17,
-    name: "מחזיק ארגונומי לעיפרון",
+    name: "Ergonomic Pencil Grip",
     description: "INHOUSE",
     product_image: s18,
     price: 6.90,
@@ -184,7 +184,7 @@ const products = [{
 },
 {
     id: 18,
-    name: "עופרת-שפיץ",
+    name: "Lead Sharpener",
     description: "0.7 PENAC",
     product_image: s19,
     price: 2.90,
@@ -193,8 +193,8 @@ const products = [{
 },
 {
     id: 19,
-    name: "לורד סימון",
-    description: "MONAMI שחור",
+    name: "Lord Marker",
+    description: "MONAMI Black",
     product_image: s20,
     price: 4.90,
     qty: 100,
@@ -202,8 +202,8 @@ const products = [{
 },
 {
     id: 20,
-    name: "דבק סטיק ",
-    description: "3 יחידות ",
+    name: "Stick Adhesive",
+    description: "3-pack",
     product_image: s21,
     price: 18.00,
     qty: 3,
@@ -213,14 +213,12 @@ const products = [{
 
 const stationeryReducer = (state = products, action) => {
     if (action.type === "DECREASE_QTY_PRODUCT") {
-        // return { ...state, qty: action.payload }
         const index = action.i;
         const newArray = [...state];
         newArray[index].qty = action.payload;
         state = newArray;
     }
     if (action.type === "ADD_QTY_PRODUCT") {
-        // return { ...state, qty: action.payload }
         const index = action.i;
         const newArray = [...state];
         newArray[index].qty = action.payload;

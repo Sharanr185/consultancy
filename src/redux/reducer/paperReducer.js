@@ -22,8 +22,8 @@ import p21 from '../PaperImage/p21.webp'
 
 const products = [{
     id: 0,
-    name: "מחברת ",
-    description: "כריכת קרטון A5",
+    name: "Notebook",
+    description: "Cardboard cover A5",
     product_image: p1,
     price: "1.60",
     qty: 100,
@@ -31,8 +31,8 @@ const products = [{
 },
 {
     id: 1,
-    name: "מחברת ספירל",
-    description: "כריכת פלסטיק איכותי",
+    name: "Spiral Notebook",
+    description: "Quality plastic cover",
     product_image: p2,
     price: "14.90",
     qty: 100,
@@ -40,8 +40,8 @@ const products = [{
 },
 {
     id: 2,
-    name: "מדבקות שם",
-    description: "לעיפרון HERMA",
+    name: "Name Labels",
+    description: "For pencils HERMA",
     product_image: p3,
     price: "4.90",
     qty: 100,
@@ -49,8 +49,8 @@ const products = [{
 },
 {
     id: 3,
-    name: "בריסטול לבן",
-    description: "70 יחידות A4",
+    name: "White Bristol Board",
+    description: "70 sheets A4",
     product_image: p4,
     price: "15.90",
     qty: 100,
@@ -58,7 +58,7 @@ const products = [{
 },
 {
     id: 4,
-    name: "מדבקות לבבות",
+    name: "Heart Stickers",
     description: "HERMA MAGIC",
     product_image: p5,
     price: "4.90",
@@ -67,8 +67,8 @@ const products = [{
 },
 {
     id: 5,
-    name: "מעטפות לבנות",
-    description: "1000 יחידות",
+    name: "White Envelopes",
+    description: "1000 units",
     product_image: p6,
     price: "110.90",
     qty: 100,
@@ -76,8 +76,8 @@ const products = [{
 },
 {
     id: 6,
-    name: "סט 30 מדבקות",
-    description: "במגוון עיצובים מרהיבים",
+    name: "30-Sticker Set",
+    description: "In a variety of stunning designs",
     product_image: p7,
     price: "7.90",
     qty: 100,
@@ -85,8 +85,8 @@ const products = [{
 },
 {
     id: 7,
-    name: "מדבקות שם",
-    description: "10 יחידות",
+    name: "Name Labels",
+    description: "10 units",
     product_image: p8,
     price: "2.50",
     qty: 100,
@@ -94,8 +94,8 @@ const products = [{
 },
 {
     id: 8,
-    name: "מחברת תווים",
-    description: "פיגנה A4",
+    name: "Music Notebook",
+    description: "Figen A4",
     product_image: p9,
     price: "8.90",
     qty: 100,
@@ -103,8 +103,8 @@ const products = [{
 },
 {
     id: 9,
-    name: "מחברת ספירל",
-    description: "כריכת פלסטיק A4",
+    name: "Spiral Notebook",
+    description: "Plastic cover A4",
     product_image: p10,
     price: "17.90",
     qty: 100,
@@ -112,7 +112,7 @@ const products = [{
 },
 {
     id: 10,
-    name: "מדבקות פרחים",
+    name: "Flower Stickers",
     description: "HERMA MAGIC",
     product_image: p11,
     price: "4.90",
@@ -121,8 +121,8 @@ const products = [{
 },
 {
     id: 11,
-    name: "דפדפת בודד",
-    description: "A4 שורה איכותי",
+    name: "Single Sheet",
+    description: "Quality A4 line",
     product_image: p12,
     price: "7.50",
     qty: 100,
@@ -130,8 +130,8 @@ const products = [{
 },
 {
     id: 12,
-    name: "נייר הדפסה",
-    description: "5 חבילות A4",
+    name: "Printing Paper",
+    description: "5 packs A4",
     product_image: p13,
     price: "119.90",
     qty: 100,
@@ -139,8 +139,8 @@ const products = [{
 },
 {
     id: 13,
-    name: "דפדפת בודד",
-    description: " 40 דף A5",
+    name: "Single Sheet",
+    description: "40 sheets A5",
     product_image: p14,
     price: "1.80",
     qty: 100,
@@ -148,8 +148,8 @@ const products = [{
 },
 {
     id: 14,
-    name: "מחברת חומה",
-    description: "40 דף CAMPUS",
+    name: "Composition Notebook",
+    description: "40 pages CAMPUS",
     product_image: p15,
     price: "1.50",
     qty: 100,
@@ -157,7 +157,7 @@ const products = [{
 },
 {
     id: 15,
-    name: "מחברת יומן",
+    name: "Diary Notebook",
     description: "INHOUSE",
     product_image: p16,
     price: "3.90",
@@ -166,8 +166,8 @@ const products = [{
 },
 {
     id: 16,
-    name: "דפדפת",
-    description: "מארז 5 יחידות A5",
+    name: "Sheet",
+    description: "Pack of 5 units A5",
     product_image: p17,
     price: "19.90",
     qty: 100,
@@ -175,8 +175,8 @@ const products = [{
 },
 {
     id: 17,
-    name: "בלוק ספירל",
-    description: "A4 לבן משובץ",
+    name: "Spiral Notebook",
+    description: "White A4 with lines",
     product_image: p18,
     price: "21.90",
     qty: 100,
@@ -184,8 +184,8 @@ const products = [{
 },
 {
     id: 18,
-    name: "בלוק כתיבה",
-    description: "כריכה קשה 100 דף",
+    name: "Writing Pad",
+    description: "Hardcover 100 pages",
     product_image: p19,
     price: "27.90",
     qty: 100,
@@ -193,7 +193,7 @@ const products = [{
 },
 {
     id: 19,
-    name: "נייר הדפסה",
+    name: "Printing Paper",
     description: "NAVIGATOR A4",
     product_image: p20,
     price: "29.90",
@@ -202,8 +202,8 @@ const products = [{
 },
 {
     id: 20,
-    name: "מדבקות לבנות",
-    description: "HERMA 32 דף",
+    name: "White Stickers",
+    description: "HERMA 32 pages",
     product_image: p21,
     price: "7.90",
     qty: 100,
@@ -213,14 +213,12 @@ const products = [{
 
 const paperReducer = (state = products, action) => {
     if (action.type === "DECREASE_QTY_PRODUCT") {
-        // return { ...state, qty: action.payload }
         const index = action.i;
         const newArray = [...state];
         newArray[index].qty = action.payload;
         state = newArray;
     }
     if (action.type === "ADD_QTY_PRODUCT") {
-        // return { ...state, qty: action.payload }
         const index = action.i;
         const newArray = [...state];
         newArray[index].qty = action.payload;

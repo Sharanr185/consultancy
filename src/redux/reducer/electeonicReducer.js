@@ -22,7 +22,7 @@ import e21 from '../ElectronicImage/e21.webp'
 
 const products = [{
     id: 0,
-    name: "דיסק און קי ",
+    name: "Disk On Key",
     description: "Sandisk",
     product_image: e1,
     price: 19.90,
@@ -31,7 +31,7 @@ const products = [{
 },
 {
     id: 1,
-    name: "כרטיס זכרון",
+    name: "Memory Card",
     description: "SANDISK 16 GB",
     product_image: e2,
     price: 29.90,
@@ -40,7 +40,7 @@ const products = [{
 },
 {
     id: 2,
-    name: "כרטיס מיקרו",
+    name: "Micro SD Card",
     description: "SANDISK 16 GB",
     product_image: e3,
     price: 19.90,
@@ -49,7 +49,7 @@ const products = [{
 },
 {
     id: 3,
-    name: "רמקולים למחשב",
+    name: "Computer Speakers",
     description: "LOGITECH S120",
     product_image: e4,
     price: 54.90,
@@ -58,7 +58,7 @@ const products = [{
 },
 {
     id: 4,
-    name: "עכבר חוטי",
+    name: "Wired Mouse",
     description: "LOGITECH M90",
     product_image: e5,
     price: 36.90,
@@ -67,7 +67,7 @@ const products = [{
 },
 {
     id: 5,
-    name: "מקלדת חוטית",
+    name: "Wired Keyboard",
     description: "LOGITECH -120",
     product_image: e6,
     price: 49.90,
@@ -76,7 +76,7 @@ const products = [{
 },
 {
     id: 6,
-    name: "מטען קיר",
+    name: "Wall Charger",
     description: "Cycle 1A",
     product_image: e7,
     price: 19.90,
@@ -85,7 +85,7 @@ const products = [{
 },
 {
     id: 7,
-    name: "אוזניות",
+    name: "Headphones",
     description: "JBL C100SI INEAR",
     product_image: e8,
     price: 69.90,
@@ -94,7 +94,7 @@ const products = [{
 },
 {
     id: 8,
-    name: "אוזניות קשת",
+    name: "Headset",
     description: "Philips SHL3075",
     product_image: e9,
     price: 149.90,
@@ -103,7 +103,7 @@ const products = [{
 },
 {
     id: 9,
-    name: "מצלמת רשת",
+    name: "Webcam",
     description: "SILVERLINE WC500 FHD",
     product_image: e10,
     price: 199.90,
@@ -112,8 +112,8 @@ const products = [{
 },
 {
     id: 10,
-    name: "נגן MP3",
-    description: "8G קליפ ספורט",
+    name: "MP3 Player",
+    description: "8G Clip Sport",
     product_image: e11,
     price: 229.90,
     qty: 100,
@@ -121,8 +121,8 @@ const products = [{
 },
 {
     id: 11,
-    name: "סוללות AA",
-    description: "מארז 10 יחידות ",
+    name: "AA Batteries",
+    description: "Pack of 10 units",
     product_image: e12,
     price: 19.90,
     qty: 100,
@@ -130,7 +130,7 @@ const products = [{
 },
 {
     id: 12,
-    name: "מחשבון מדעי",
+    name: "Scientific Calculator",
     description: "CASIO FX-82ES PLUS",
     product_image: e13,
     price: 49.90,
@@ -139,7 +139,7 @@ const products = [{
 },
 {
     id: 13,
-    name: "מחשבון מדעי",
+    name: "Scientific Calculator",
     description: "CASIO FX-991-ES",
     product_image: e14,
     price: 99.90,
@@ -148,7 +148,7 @@ const products = [{
 },
 {
     id: 14,
-    name: "רמקול נייד ואלחוטי",
+    name: "Portable Wireless Speaker",
     description: "CONCEPT BTS-F7",
     product_image: e15,
     price: 69.90,
@@ -157,8 +157,8 @@ const products = [{
 },
 {
     id: 15,
-    name: "מנורת שולחן ",
-    description: "לבנה מתקפלת",
+    name: "Desk Lamp",
+    description: "Foldable White",
     product_image: e16,
     price: 49.90,
     qty: 100,
@@ -166,8 +166,8 @@ const products = [{
 }
     , {
     id: 16,
-    name: "כבל למדפסת",
-    description: "USB 2 מטר",
+    name: "Printer Cable",
+    description: "USB 2 Meter",
     product_image: e17,
     price: 12.90,
     qty: 100,
@@ -175,7 +175,7 @@ const products = [{
 },
 {
     id: 17,
-    name: "מקלדת + עכבר",
+    name: "Keyboard + Mouse",
     description: "LOGITECH MK-270",
     product_image: e18,
     price: 119.90,
@@ -184,7 +184,7 @@ const products = [{
 },
 {
     id: 18,
-    name: "כונן חיצוני ",
+    name: "External Drive",
     description: "1T USB 3.0 WD",
     product_image: e19,
     price: 249.90,
@@ -193,8 +193,8 @@ const products = [{
 },
 {
     id: 19,
-    name: "סוללות AAA",
-    description: "ENERGIZER במארז",
+    name: "AAA Batteries",
+    description: "ENERGIZER Pack",
     product_image: e20,
     price: 11.90,
     qty: 100,
@@ -202,8 +202,8 @@ const products = [{
 },
 {
     id: 20,
-    name: " רמקולים למחשב ",
-    description: " LOGITECH",
+    name: "Computer Speakers",
+    description: "LOGITECH",
     product_image: e21,
     price: 79.90,
     qty: 100,
@@ -211,17 +211,15 @@ const products = [{
 }
 ]
 
-const electeonicReducer = (state = products, action) => {
+const electronicReducer = (state = products, action) => {
     debugger
     if (action.type === "DECREASE_QTY_PRODUCT") {
-        // return { ...state, qty: action.payload }
         const index = action.i;
         const newArray = [...state];
         newArray[index].qty = action.payload;
         state = newArray;
     }
     if (action.type === "ADD_QTY_PRODUCT") {
-        // return { ...state, qty: action.payload }
         const index = action.i;
         const newArray = [...state];
         newArray[index].qty = action.payload;
@@ -229,4 +227,4 @@ const electeonicReducer = (state = products, action) => {
     }
     return state
 };
-export default electeonicReducer;
+export default electronicReducer;

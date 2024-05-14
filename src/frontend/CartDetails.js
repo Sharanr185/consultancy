@@ -22,16 +22,16 @@ export default function CartDetails() {
       <>
          <center>
             <br></br>
-            <h1>עגלת קניות</h1><br></br>
+            <h1>Shopping Cart</h1><br></br>
             {cartProduct.length > 0 ?
                <>
                   <Table striped bordered hover style={{ width: '50%', marginRight: '25%', marginLeft: '25%' }}>
                      <tr>
                         <th></th>
-                        <th style={{ textAlign: "center" }}>מחיר</th>
-                        <th style={{ textAlign: "center" }}>כמות</th>
-                        <th style={{ textAlign: "center" }}>תמונה</th>
-                        <th style={{ textAlign: "center" }}>שם המוצר</th>
+                        <th style={{ textAlign: "center" }}>Price</th>
+                        <th style={{ textAlign: "center" }}>Quantity</th>
+                        <th style={{ textAlign: "center" }}>Image</th>
+                        <th style={{ textAlign: "center" }}>Product Name</th>
                      </tr>
                      {cartProduct.map((item) => (
                         <>
@@ -43,7 +43,7 @@ export default function CartDetails() {
                                  console.log(cartProduct)
                               }}
                               > X </Button></td>
-                              <td style={{ textAlign: "center" }}>{item.price * item.qty} ₪</td>
+                              <td style={{ textAlign: "center" }}>{item.price * item.qty} Rs.</td>
 
                               <td style={{ textAlign: "center" }}>
                                  <Button style={{ backgroundColor: "#F5D43E", borderColor: "#F5D43E", color: "black" }} onClick={(e) => {
@@ -66,18 +66,19 @@ export default function CartDetails() {
                   </Table><br /><br />
                   <Button
                      style={{ backgroundColor: '#F5D43E', border: '#F5D43E', width: 200, height: 50 }}
-                     onClick={() => navigate(-1)}>להמשך הקניה</Button><br /><br />
+                     onClick={() => navigate(-1)}>Continue Shopping</Button><br /><br />
                   <center>
                      <PayPal />
                   </center>
                </>
-               : <h1 dir='rtl' style={{ color: "gray" }}>עגלת הקניות שלכם ריקה :(</h1>
+               : <h1 dir='rtl' style={{ color: "gray" }}>Your shopping cart is empty :(</h1>
             }
             <br /><br /><br /><br />
          </center>
       </>
    )
 };
+
 
 
 //https://stackoverflow.com/questions/75606968/add-to-cart-change-the-qty-in-react

@@ -22,8 +22,8 @@ import f21 from '../FilingImage/f21.webp'
 
 const products = [{
     id: 0,
-    name: "ניילוניות",
-    description: "A4 25 יחידות",
+    name: "Envelopes",
+    description: "A4 25 units",
     product_image: f1,
     price: 24.00,
     qty: 100,
@@ -31,7 +31,7 @@ const products = [{
 },
 {
     id: 1,
-    name: "נילונית לתיוק",
+    name: "Binder Cover",
     description: "A4",
     product_image: f2,
     price: 6.90,
@@ -40,8 +40,8 @@ const products = [{
 },
 {
     id: 2,
-    name: "קלסר משרדי",
-    description: "A4 'רוחב 8 סנ",
+    name: "Office Binder",
+    description: "A4 8 cm spine",
     product_image: f3,
     price: 12.90,
     qty: 100,
@@ -49,8 +49,8 @@ const products = [{
 },
 {
     id: 3,
-    name: "קלסר משרדי",
-    description: "A4 'רוחב 5 סנ",
+    name: "Office Binder",
+    description: "A4 5 cm spine",
     product_image: f4,
     price: 12.90,
     qty: 100,
@@ -58,8 +58,8 @@ const products = [{
 },
 {
     id: 4,
-    name: "קופסא לקטלוג",
-    description: "פלסטיק",
+    name: "Catalog Box",
+    description: "Plastic",
     product_image: f5,
     price: 14.90,
     qty: 100,
@@ -67,7 +67,7 @@ const products = [{
 },
 {
     id: 5,
-    name: "לוח לחצן ",
+    name: "Pressboard Clipboard",
     description: "A4",
     product_image: f6,
     price: 21.90,
@@ -76,8 +76,8 @@ const products = [{
 },
 {
     id: 6,
-    name: "תיק נילוניות",
-    description: "100 דפים A4",
+    name: "Document Wallet",
+    description: "100 pages A4",
     product_image: f7,
     price: 33.90,
     qty: 100,
@@ -85,8 +85,8 @@ const products = [{
 },
 {
     id: 7,
-    name: "חוצצי פלסטיק",
-    description: "12 יחידות A4",
+    name: "Plastic Dividers",
+    description: "12 units A4",
     product_image: f8,
     price: 16.90,
     qty: 100,
@@ -94,8 +94,8 @@ const products = [{
 },
 {
     id: 8,
-    name: "חוצצי פלסטיק",
-    description: "7 יחידות A4",
+    name: "Plastic Dividers",
+    description: "7 units A4",
     product_image: f9,
     price: 11.90,
     qty: 100,
@@ -103,8 +103,8 @@ const products = [{
 },
 {
     id: 9,
-    name: "תיק אקורדיון",
-    description: "מיני 13 תאים",
+    name: "Accordion File",
+    description: "Mini 13 compartments",
     product_image: f10,
     price: 18.90,
     qty: 100,
@@ -112,8 +112,8 @@ const products = [{
 },
 {
     id: 10,
-    name: "חוצץ מלבני ",
-    description: "מארז 100 יחידות",
+    name: "Rectangular Divider",
+    description: "Pack of 100 units",
     product_image: f11,
     price: 11.90,
     qty: 100,
@@ -121,8 +121,8 @@ const products = [{
 },
 {
     id: 11,
-    name: "אינדקס",
-    description: "30 כיסים A5",
+    name: "Index",
+    description: "30 pockets A5",
     product_image: f12,
     price: 19.90,
     qty: 100,
@@ -130,8 +130,8 @@ const products = [{
 },
 {
     id: 12,
-    name: "קלסר משרדי ",
-    description: "קרטון ",
+    name: "Office Binder",
+    description: "Cardboard",
     product_image: f13,
     price: 8.50,
     qty: 100,
@@ -139,8 +139,8 @@ const products = [{
 },
 {
     id: 13,
-    name: "קלסר ",
-    description: "פלסטיק A4",
+    name: "Binder",
+    description: "Plastic A4",
     product_image: f14,
     price: 21.90,
     qty: 100,
@@ -148,8 +148,8 @@ const products = [{
 },
 {
     id: 14,
-    name: "קלסר ",
-    description: "פלסטיק A5",
+    name: "Binder",
+    description: "Plastic A5",
     product_image: f15,
     price: 11.90,
     qty: 100,
@@ -157,8 +157,8 @@ const products = [{
 },
 {
     id: 15,
-    name: "תיק  תאים",
-    description: "12 תאים",
+    name: "Compartment File",
+    description: "12 compartments",
     product_image: f16,
     price: 24.90,
     qty: 100,
@@ -166,8 +166,8 @@ const products = [{
 },
 {
     id: 16,
-    name: "תיק פלסטיק",
-    description: "סגירת תיק תק A4 ",
+    name: "Plastic Bag",
+    description: "A4 Zip Closure",
     product_image: f17,
     price: 3.50,
     qty: 100,
@@ -175,7 +175,7 @@ const products = [{
 },
 {
     id: 17,
-    name: "תיקיית קרטון",
+    name: "Cardboard Folder",
     description: "A4 EXACOMPTA",
     product_image: f18,
     price: 7.90,
@@ -184,8 +184,8 @@ const products = [{
 },
 {
     id: 18,
-    name: "לוח לחצן",
-    description: "פלסטיק A4",
+    name: "Pressboard Clipboard",
+    description: "Plastic A4",
     product_image: f19,
     price: 19.90,
     qty: 100,
@@ -193,8 +193,8 @@ const products = [{
 },
 {
     id: 19,
-    name: "ארגז 5 מגירות",
-    description: "רחבות צבעוניות",
+    name: "5-Drawer Box",
+    description: "Colorful Wide",
     product_image: f20,
     price: 219.90,
     qty: 100,
@@ -202,8 +202,8 @@ const products = [{
 },
 {
     id: 20,
-    name: "ארגז 4 מגירות",
-    description: " ARDA MY DESK ",
+    name: "4-Drawer Box",
+    description: "ARDA MY DESK",
     product_image: f21,
     price: 149.90,
     qty: 100,
@@ -213,14 +213,12 @@ const products = [{
 
 const filingReducer = (state = products, action) => {
     if (action.type === "DECREASE_QTY_PRODUCT") {
-        // return { ...state, qty: action.payload }
         const index = action.i;
         const newArray = [...state];
         newArray[index].qty = action.payload;
         state = newArray;
     }
     if (action.type === "ADD_QTY_PRODUCT") {
-        // return { ...state, qty: action.payload }
         const index = action.i;
         const newArray = [...state];
         newArray[index].qty = action.payload;

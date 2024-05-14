@@ -6,7 +6,6 @@ import { useDispatch } from 'react-redux';
 import { addToCart } from '../redux/action/cartActions';
 import { decreaseQty } from '../redux/action/productActions';
 
-
 export default function ShowDetails(props) {
 
     const [amount, setAmount] = useState(1);
@@ -25,13 +24,13 @@ export default function ShowDetails(props) {
                 animation={true}
             >
                 <Modal.Header closeButton></Modal.Header>
-                <Modal.Body dir='rtl'>
+                <Modal.Body>
                     <Image variant="top" src={props.products.product_image} style={{ width: 200, height: 200 }} />
                     <Modal.Title id="contained-modal-title-vcenter" style={{ textAlign: "center" }}>
                         {props.products.name}
                     </Modal.Title>
                     <h5>{props.products.description}</h5>
-                    <h4>{props.products.price * amount} ₪</h4>
+                    <h4>{props.products.price * amount} Rs</h4>
                     <Button style={{ backgroundColor: "#F5D43E", borderColor: "#F5D43E", color: "black" }} onClick={() => {
                         setAmount(Math.min(props.products.qty, amount + 1))
                     }}>+</Button>
@@ -40,7 +39,6 @@ export default function ShowDetails(props) {
                         setAmount(Math.max(1, amount - 1))
                     }}>-</Button><br></br><br></br>
                     <Button  style={{ backgroundColor: "#F5D43E", borderColor: "#F5D43E", color: "black", width: 200 }} onClick={(e) => {
-                        debugger
                         e.preventDefault();
                         console.log('this is e')
                         dispatch(decreaseQty(props.products.qty - amount, props.products.id));
@@ -48,10 +46,11 @@ export default function ShowDetails(props) {
                         dispatch(addToCart(props.products,amount))
                         setAmount(1);
                         props.onHide();
-                    }}>הוספה לסל</Button>
+                    }}>Add to Cart</Button>
                 </Modal.Body>
 
             </Modal>
         </>
     );
 };
+

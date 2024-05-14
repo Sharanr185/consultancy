@@ -5,12 +5,13 @@ import { useSelector } from "react-redux"
 import ShowDetails from "./ShowDetails";
 import { TiShoppingCart } from 'react-icons/ti';
 
-export default function Filing() {
 
-    const filings = useSelector((state) => state.filingReducer);
+export default function Electronic() {
+
+    
+    const electronics = useSelector((state) => state.electeonicReducer);
     const [modalShow, setModalShow] = useState(false);
     const [selectedProduct, setSelectedProduct] = useState({});
-
 
 
     //debugger
@@ -18,7 +19,7 @@ export default function Filing() {
         <>
             <center dir="rtl">
                 <br></br><br></br><br></br><br></br>
-                {filings.map((item) => (
+                {electronics.map((item) => (
                     <>
                         <Card style={{ width: '18rem', display: "inline-block", backgroundColor: "white", textAlign: "center", borderColor: "#F5D43E", margin: 5 }}>
                             <Card.Img variant="top" src={item.product_image} style={{ width: 100, height: 100 }} />
@@ -29,7 +30,7 @@ export default function Filing() {
                                         () => {
                                             setModalShow(true);
                                             setSelectedProduct(item)
-                                        }}><TiShoppingCart />   להצגה מהירה </Button>
+                                        }}><TiShoppingCart />   Quick View </Button>
                             </Card.Body>
                         </Card>
 

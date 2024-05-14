@@ -5,35 +5,32 @@ import { useSelector } from "react-redux"
 import ShowDetails from "./ShowDetails";
 import { TiShoppingCart } from 'react-icons/ti';
 
+export default function Stationery() {
 
-export default function Electronic() {
-
-    
-    const electronics = useSelector((state) => state.electeonicReducer);
+    const stationeries = useSelector((state) => state.stationeryReducer);
     const [modalShow, setModalShow] = useState(false);
     const [selectedProduct, setSelectedProduct] = useState({});
 
 
-    //debugger
+    debugger
     return (
         <>
-            <center dir="rtl">
+            <center>
                 <br></br><br></br><br></br><br></br>
-                {electronics.map((item) => (
+                {stationeries.map((item) => (
                     <>
                         <Card style={{ width: '18rem', display: "inline-block", backgroundColor: "white", textAlign: "center", borderColor: "#F5D43E", margin: 5 }}>
                             <Card.Img variant="top" src={item.product_image} style={{ width: 100, height: 100 }} />
                             <Card.Body>
-                                <Card.Title dir="rtl">{item.name}</Card.Title>
+                                <Card.Title>{item.name}</Card.Title>
                                 <Button style={{ backgroundColor: "#F5D43E", borderColor: "#F5D43E", color: "black" }}
                                     variant="primary" onClick={
                                         () => {
                                             setModalShow(true);
                                             setSelectedProduct(item)
-                                        }}><TiShoppingCart />   להצגה מהירה </Button>
+                                        }}><TiShoppingCart />   Quick View </Button>
                             </Card.Body>
                         </Card>
-
                     </>
                 ))}
                 <br></br><br></br><br></br><br></br>
@@ -42,7 +39,9 @@ export default function Electronic() {
                 products={selectedProduct}
                 show={modalShow}
                 onHide={() => setModalShow(false)}
+
             ></ShowDetails>
+
         </>
     )
 };

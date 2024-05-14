@@ -1,23 +1,27 @@
 import './App.css';
-import Navbar from './comp/Navbar';
+import Navbar from './frontend/Navbar';
 import { Provider } from 'react-redux';
 import store from './redux/store';
-import Footer from './comp/Footer';
-import { BrowserRouter } from 'react-router-dom';
-import { Routes } from 'react-router';
-import Home from './comp/Home';
-import About from './comp/About';
-import Electronic from './comp/Electronic';
-import Paper from './comp/Paper';
-import Filing from './comp/Filing';
-import Stationery from './comp/Stationery';
-import CartDetails from './comp/CartDetails';
-import { Route } from 'react-router';
-import Branches from './comp/Branches';
+import Footer from './frontend/Footer';
+import { BrowserRouter, Routes,  Route  } from 'react-router-dom';
+//import { Routes } from 'react-router';
+import Login from './frontend/Login';
+import Signup from './frontend/Signup';
+import Home from './frontend/Home';
+import About from './frontend/About';
+import Electronic from './frontend/Electronic';
+import Paper from './frontend/Paper';
+import Filing from './frontend/Filing';
+import Stationery from './frontend/Stationery';
+import CartDetails from './frontend/CartDetails';
+import Contact from './frontend/Contact';
+//import { Route } from 'react-router';
+import Branches from './frontend/Branches';
 import BackToTop from "react-back-to-top-button";
 import { SlArrowUp } from 'react-icons/sl';
-import ScrollButton from './comp/ScrollButton';
+import ScrollButton from './frontend/ScrollButton';
 import { Fragment } from 'react';
+import SendEmail from './frontend/SendEmail';
 
 function App() {
   return (
@@ -30,7 +34,8 @@ function App() {
         <BrowserRouter>
           <Navbar></Navbar>
           <Routes>
-            <Route exact path='/' element={<Home />} />
+            <Route exact path='/' element={<Login />} />
+            <Route exact path='/register' element={<Signup/>}/>
             <Route exact path='/about' element={<About />} />
             <Route exact path='/electronic' element={<Electronic />} />
             <Route exact path='/paper' element={<Paper />} />
@@ -38,7 +43,8 @@ function App() {
             <Route exact path='/stationery' element={<Stationery />} />
             <Route exact path='/cart' element={<CartDetails />} />
             <Route exact path='/branches' element={<Branches />} />
-            {/* <Route exact path='/noProducts' element={<NoProducts/>} /> */}
+            <Route exact path = '/contact' element = {<Contact/>}/>
+            {/*<Route exact path='/login' element={<Login />}/>*/}
           </Routes>
         </BrowserRouter>
       </Provider>
