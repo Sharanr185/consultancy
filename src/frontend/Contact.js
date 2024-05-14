@@ -3,6 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
 import api from '../api/url';
 const Contact = () => {
+    const [name, setName]= useState('');
     const [email, setEmail] = useState('');
     const [feedback, setFeedback] = useState('');
     const navigate = useNavigate();
@@ -10,6 +11,7 @@ const Contact = () => {
     const handleSubmit =  (e) => {
         e.preventDefault();
         const request = {
+          name: name,
           email: email,
           feedback: feedback
         }
@@ -29,6 +31,17 @@ return (
       <div className="row">
         <div className="col-md-6 order-md-2">
           <form onSubmit={handleSubmit}>
+           <div className="mb-3 mt-4 mt-sm-0">
+              <label className="form-label">Email</label>
+              <input
+                type="text"
+                className="form-control"
+                placeholder="Enter your name"
+                value={email}
+                onChange={(e) => setName(e.target.value)}
+                required
+              />
+            </div>
             <div className="mb-3 mt-4 mt-sm-0">
               <label className="form-label">Email</label>
               <input
